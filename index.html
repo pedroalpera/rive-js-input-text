@@ -1,0 +1,37 @@
+<!-- This is a template using the high level API -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="src/styles.css">
+  <title>Rive Weather Widget</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app" style="position:absolute ; ">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <!-- Here we have a invisible html text input so we activate the keyboard in mobile -->
+    <!-- We put this input over the Rive input  -->
+    <!-- Change the opacity to 1 to see the text input -->
+    <div
+      style="position:absolute ; z-index: 1; left: 130px; top: 400px;  opacity: 0; background-color: rgba(192, 15, 15, 0.112);">
+      <input type="text" class="input" id="inputTextField" name="inputTextField" size="25" />
+    </div>
+  </div>
+
+
+
+  <!-- You can check the last version number here:
+    https://www.npmjs.com/package/@rive-app/canvas  -->
+
+  <!-- Render with canvas -->
+  <script src="https://unpkg.com/@rive-app/canvas@2.21.3"></script>
+
+  <!-- Render with the Rive Render (webgl2) -->
+  <!-- <script src="https://unpkg.com/@rive-app/webgl2@2.21.2"></script> -->
+
+  <script src="src/main.js"></script>
+</body>
+
+</html>
